@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchBox from "./SearchBox";
 import { TbGridDots } from "react-icons/tb";
-import { BsGrid3X3Gap } from "react-icons/bs";
+
 import { RiSettings3Line } from "react-icons/ri";
 
 export default function SearchHeader() {
