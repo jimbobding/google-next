@@ -1,4 +1,4 @@
-"client side";
+"use client";
 
 import CountryLookup from "./CountryLookup";
 
