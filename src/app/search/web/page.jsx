@@ -44,5 +44,5 @@ async function WebSearchContent({ searchParams }) {
     );
   }
 
-  return <WebSearchResults results={data} />;
+  return <div>{results && <WebSearchResults results={data} />}</div>;
 }
