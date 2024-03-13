@@ -1,6 +1,5 @@
 import Link from "next/link";
 import WebSearchResults from "@/components/WebSearchResults";
-import Result from "postcss/lib/result";
 
 export default async function WebSearchPage({ searchParams }) {
   const startIndex = searchParams.start || "1";
