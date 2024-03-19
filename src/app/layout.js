@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,10 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen">
-        {children}
-        <Footer />
-      </body>
+      <Suspense fallback={<div>Loading...</div>}>
+        <body className="relative min-h-screen">
+          {children}
+
+          <Footer />
+        </body>
+      </Suspense>
     </html>
   );
 }
