@@ -23,9 +23,7 @@ export default function SearchHeader() {
           />
         </Link>
         <div className="flex-1">
-          <Suspense fallback={<div>Loading...</div>}>
-            <SearchBox />
-          </Suspense>
+          <SearchBox />
         </div>
         <div className="hidden md:inline-flex space-x-2">
           <RiSettings3Line className="bg-transparent hover:bg-gray-200 rounded-full text-4xl p-2 cursor-pointer" />
